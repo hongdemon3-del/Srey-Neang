@@ -1,0 +1,6 @@
+{
+  "name": "ឱសថស្ថាន ស្រី នាង - Srey Neang Pharmacy",
+  "description": "វេទិកាឱសថស្ថាន ស្រី នាង (Srey Neang Pharmacy) សម្រាប់បញ្ជាទិញថ្នាំពេទ្យ សេរ៉ូមទឹក និងសម្ភារៈឧបករណ៍ពេទ្យទូទៅ ២៤ម៉ោង/៧ថ្ងៃ ជាមួយនឹងប្រព័ន្ធកែប្រែទិន្នន័យផ្ទាល់",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

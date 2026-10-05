@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Kantumruy Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+}
+
+/* Edit mode highlighting */
+.editable-active [contenteditable="true"] {
+  outline: 2px dashed #0284c7;
+  outline-offset: 4px;
+  border-radius: 6px;
+  cursor: text;
+  transition: all 0.15s ease-in-out;
+}
+
+.editable-active [contenteditable="true"]:hover {
+  background-color: rgba(224, 242, 254, 0.6);
+}
+
+.editable-active [contenteditable="true"]:focus {
+  outline: 2px solid #0284c7;
+  background-color: rgba(224, 242, 254, 0.8);
+}
+
+.editable-active .image-editable-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.editable-active .image-editable-container::after {
+  content: "📷 ចុចដើម្បីប្តូររូប";
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 132, 199, 0.78);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  backdrop-filter: blur(2px);
+  z-index: 10;
+}
+
+.editable-active .image-editable-container:hover::after {
+  opacity: 1;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
